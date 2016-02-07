@@ -27,3 +27,4 @@ deploy:
         token: $GIT_TOKEN
         domain: untungs.github.io
         basedir: public
+        repo: untungs/untungs.github.io
