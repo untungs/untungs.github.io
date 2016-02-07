@@ -16,6 +16,9 @@ build:
         version: "0.15"
         theme: hugo-cactus-theme
         flags: --buildDrafts=true
+    - script:
+        code: |
+          touch public/.nojekyll
 deploy:
   steps:
     - install-packages:
