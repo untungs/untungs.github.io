@@ -13,6 +13,11 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
     - script:
+        name: install git
+        code: |
+            apt-get update
+            apt-get install git -y
+    - script:
         name: initialize git submodule
         code: |
           git submodule update --init --recursive
