@@ -1,3 +1,47 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+# Site settings
+baseurl = "http://untungs.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "UntungS Blog"
+theme = "hugo-cactus-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+# Disable comments by leaving disqusShortname empty
+disqusShortname = ""
+
+[params]
+	name = "Untung \"Laque\" Suryono"
+	description = "A Personal Blog"
+	bio = "Blogger - Programmer - Gopher"
+	# Enter optionally your twitter account
+	twitter = ""
+	enableRSS = true
+
+	# The variables below are optionally too and can be used to
+	# translate or customize each string of the theme.
+
+	# Navigation links
+	home = ""
+	about = ""
+	subscribe = ""
+	# Pagination links
+	olderPosts = ""
+	newerPosts = ""
+	readMore = ""
+	copyright = ""
+	# Sharing options and author information in posts
+	aboutAuthor = "I'm an enthusiastic gopher."
+	tweet = ""
+	share = ""
+	# 404 page
+	title404 = ""
+	subtitle404 = ""
+
+  # Social icons style - circle, rounded, or empty
+  socialIconStyle = "circle"
+
+# Add additional social link entries underneath
+[social]
+    twitter  = "https://www.twitter.com/"
+    facebook = "https://www.facebook.com/"
+    github   = "https://www.github.com/"
+    dribble  = "https://www.dribbble.com/"
