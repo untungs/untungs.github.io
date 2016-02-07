@@ -12,11 +12,16 @@ build:
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
+    - script:
+        name: initialize git submodule
+        code: |
+          git submodule update --init --recursive
     - arjen/hugo-build:
         version: "0.15"
         theme: hugo-cactus-theme
         flags: --buildDrafts=true
     - script:
+        name: prevent jekyll from generating the blog
         code: |
           touch public/.nojekyll
 deploy:
